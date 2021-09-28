@@ -1,0 +1,90 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>“Quotes that might help you alter your life”</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>Hard Work Quotes</h2>
+        <p>“Winners embrace hard work. They love the discipline of it, the trade-off they’re making to win. Losers, on the other hand, see it as punishment. And that’s the difference.”
+          ―Lou Holtz</p>
+        <p>“Hard work compounds like interest, and the earlier you do it, the more time you have for the benefits to pay off.”
+          ― Sam Altman</p>
+        <p>“Determine never to be idle. No person will have occasion to complain of the want of time, who never loses any. It is wonderful how much may be done, if we are always doing.”
+          ― Thomas Jefferson</p>
+          Thomas Jefferson
+        <p>“Talent is cheaper than table salt. What separates the talented individual from the successful one is a lot of hard work.”
+          ―Stephen King</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Self Confidence Quotes</h2>
+        <p>“Because one believes in oneself, one doesn't try to convince others. Because one is content with oneself, one doesn't need others' approval. Because one accepts oneself, the whole world accepts him or her.”
+          ― Lao Tzu</p>
+        <p>“If you have a dream, don’t just sit there. Gather courage to believe that you can succeed and leave no stone unturned to make it a reality.”
+          ― Dr Roopleen</p>
+        <p>“As long as you look for someone else to validate who you are by seeking their approval, you are setting yourself up for disaster. You have to be whole and complete in yourself. No one can give you that. You have to know who you are - what others say is irrelevant.”
+          ― Nic Sheff</p>
+        <p>“Look well into thyself; there is a source of strength which will always spring up if thou wilt always look.”
+          ― Marcus Aurelius, Meditations</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Truth Quotes</h2>
+        <p>“If you tell the truth, you don't have to remember anything.”
+          ― Mark Twain</p>
+        <p>“Perhaps one did not want to be loved so much as to be understood.”
+          ― George Orwell</p>
+        <p>“When I despair, I remember that all through history the way of truth and love have always won. There have been tyrants and murderers, and for a time, they can seem invincible, but in the end, they always fall. Think of it--always.”
+          ― Mahatma Gandhi</p>
+        <p>“Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others. And having no respect he ceases to love.”
+          ― Fyodor Dostoevsky</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Time Quotes</h2>
+        <p>“Don't waste your time with explanations: people only hear what they want to hear.”
+          ― Paulo Coelho</p>
+        <p>“Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin.”
+          ― Mother Theresa</p>
+        <p>“A man who dares to waste one hour of time has not discovered the value of life.”
+          ― Charles Darwin</p>
+        <p>“Time is the longest distance between two places.”
+          ― Tennessee Williams</p>
+        <p>“They always say time changes things, but you actually have to change them yourself.”
+          ― Andy Warhol</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
