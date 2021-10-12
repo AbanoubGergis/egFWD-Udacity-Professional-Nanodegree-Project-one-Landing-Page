@@ -38,3 +38,7 @@
 
 ### You need to download a code reader like Visual Studio Code Vs Atom or other.
 ### To be able to use it, you must first open your code reader and then open the project file.
+
+#
+#
+#
